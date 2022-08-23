@@ -1,0 +1,300 @@
+/* Загальні */
+:root{
+    --primary-body-color:#FFFFFF;
+    --secondary-body-color:#2F303A;
+    --third-section-color: #F5F4FA;
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --primary-text-color-dark: #212121;
+    --secondary-text-color-dark:#757575;
+    --primary-text-color-light: #FFFFFF;
+    --secondary-text-color-light: rgba(255, 255, 255, 0.6);
+    --logo-color-first-part: #2196F3;
+    --heder-logo-color-second-part:#000000;
+    --accent-color:#2196F3;
+    --backgraund-color-btn:#2196F3;
+    --accent-backgraund-color-btn: #188CE8;
+}
+h1, h2, h3, p {margin-top: 0;
+margin-bottom: 0;}
+ul {margin-top: 0;
+margin-bottom: 0;
+padding-left: 0;}
+.link {
+    text-decoration: none;
+}
+.list {
+    list-style: none;
+}
+img 
+{display: block;
+}
+button{cursor: pointer;
+font-family: inherit;
+border: none;
+background-color: none;}
+
+body
+{background-color: var(--primary-body-color);
+font-family: var(--primary-font);
+color: var(--primary-text-color-dark);
+font-size: 14px;
+letter-spacing: 0.03em;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* Навігація */
+/* Навігація Логотип */
+.page-heder-container {
+display:flex;
+
+}
+
+.page-navigation{display:flex;
+justify-content: space-between;}
+.page-logo-heder{
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--heder-logo-color-second-part);
+    margin-right: 93px;
+}
+.page-logo-first{
+    color: var(--logo-color-first-part);
+}
+/* Навігація меню */
+.menu
+{display: flex;
+align-items: center;
+column-gap: 50px;
+}
+/* .menu-item {
+   
+} */
+.menu-link{ 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color-dark);
+    
+}
+.menu-link:hover,
+.menu-link:focus
+{
+    color: var(--accent-color);
+}
+.current:active { color:var(--accent-color);}
+
+/* Навігація контакти */
+.contact-heder{display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+   }
+.contact-mail-address{
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color-dark);
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: 50px;
+}
+.contact-phone-number{
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--secondary-text-color-dark);
+}
+.contact-link-heder:hover,
+.contact-link-heder:focus
+{
+    color: var(--accent-color) 
+}
+
+/* Слоган */
+.sec-slg-btn {
+    background-color: var(--secondary-body-color)
+}
+.slogan {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-text-color-light);
+}
+/* Замовити послугу */
+.modal-open-btn
+{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color-light);
+    background-color: var(--backgraund-color-btn);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.modal-open-btn:hover,
+.modal-open-btn:focus { background-color: var(--accent-backgraund-color-btn);}
+
+/* Опис діяльності компанії */
+.visually-hidden {
+  position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.description-subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color-dark);
+}
+
+.description-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color-dark);
+}
+
+/* Чим ми займаємося */
+.act-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:var(--primary-text-color-dark);
+}
+
+/* Наша колманда */
+
+.team{
+    background-color: var(--third-section-color);
+}
+.team-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+}
+
+.team-subtitle{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:var(--primary-text-color-dark);
+}
+
+.team-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color-dark);
+}
+/* футер */
+footer{
+    background-color: var(--secondary-body-color);
+}
+.page-logo-footer{
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color-light);
+}
+.footer-address{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color-light);
+}
+ .footer-mail-address{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color-light);
+ } 
+ .footer-phone-number{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color-light);
+ }
+ .footer-contacts:hover,
+  .footer-contacts:focus
+  {
+    color: var(--accent-color);
+  }
+/* Портфоліо */
+/* Фільтр */
+
+.filter-button{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color-dark);
+    background: var(--third-section-color);
+}
+.filter-button:hover,
+.filter-button:active,
+.filter-buttonitem:focus{
+    background-color: var(--accent-color);
+    color: var(--primary-text-color-light);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+   }
+    
+.portfolio-subtitle{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color-dark);
+    } 
+.portfolio-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color-dark);
+    }
+    
+   
